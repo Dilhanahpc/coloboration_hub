@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About · AI Collaboration Hub</title>
+  <style>
+    body { background: #0b0f17; color: #e9f0ff; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial; margin: 0; min-height: 100vh; }
+    .about-hero {
+      max-width: 700px;
+      margin: 60px auto 0;
+      background: linear-gradient(120deg, rgba(123,97,255,0.13), rgba(0,255,163,0.10), rgba(255,255,255,0.03));
+      border-radius: 26px;
+      box-shadow: 0 8px 40px rgba(0,0,0,.45);
+      padding: 48px 38px 38px 38px;
+      border: 1.5px solid rgba(255,255,255,0.13);
+      position: relative;
+      overflow: hidden;
+    }
+    .about-hero h1 {
+      font-size: 2.6rem;
+      margin: 0 0 18px 0;
+      color: #72e6ff;
+      text-shadow: 0 0 18px rgba(114,230,255,.25);
+    }
+    .about-hero p {
+      font-size: 1.18rem;
+      color: #cfe0ff;
+      margin-bottom: 18px;
+      line-height: 1.7;
+    }
+    .about-hero .pill {
+      display: inline-block;
+      background: linear-gradient(90deg, #7b61ff, #00ffa3);
+      color: #081018;
+      font-weight: 700;
+      border-radius: 999px;
+      padding: 7px 18px;
+      font-size: 1rem;
+      margin: 0 8px 18px 0;
+      box-shadow: 0 0 18px rgba(123,97,255,.18);
+    }
+    .about-hero .orb {
+      position: absolute;
+      right: -80px;
+      top: -80px;
+      width: 220px;
+      height: 220px;
+      background: conic-gradient(from 0deg, #72e6ff, #7b61ff, #00ffa3, #72e6ff);
+      filter: blur(22px) saturate(150%);
+      border-radius: 50%;
+      opacity: .45;
+      animation: spin 14s linear infinite;
+      z-index: 0;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .about-hero .features {
+      margin-top: 24px;
+      display: grid;
+      gap: 18px;
+    }
+    .feature {
+      background: rgba(255,255,255,0.06);
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.10);
+      padding: 18px 20px;
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+      box-shadow: 0 2px 12px rgba(114,230,255,.08);
+    }
+    .feature-icon {
+      font-size: 1.7rem;
+      margin-top: 2px;
+      color: #00ffa3;
+      filter: drop-shadow(0 0 8px #00ffa3aa);
+    }
+    .feature-content h3 {
+      margin: 0 0 6px 0;
+      color: #7b61ff;
+      font-size: 1.15rem;
+    }
+    .feature-content p {
+      margin: 0;
+      color: #cfe0ff;
+      font-size: 1rem;
+    }
+    .about-footer {
+      text-align: center;
+      color: #9aa8c3;
+      margin: 48px 0 0 0;
+      font-size: 1rem;
+    }
+    .back-link {
+      display: inline-block;
+      margin: 32px 0 0 0;
+      color: #72e6ff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color .18s;
+    }
+    .back-link:hover { color: #00ffa3; }
+  </style>
+</head>
+<body>
+  <div class="about-hero">
+    <div class="orb"></div>
+    <h1>About AI Collaboration Hub</h1>
+    <span class="pill">Multi-Agent</span>
+    <span class="pill">Real-Time Debate</span>
+    <span class="pill">Consensus Synthesis</span>
+    <p>
+      <strong>AI Collaboration Hub</strong> is a next-generation platform where multiple expert AI agents collaborate, debate, and converge on the best solution for your challenge. Toggle agents like <span style="color:#7b61ff">GPT</span>, <span style="color:#00d4ff">Gemini</span>, <span style="color:#00ffa3">Copilot</span>, <span style="color:#ffb703">LLaMA</span>, <span style="color:#6688ff">DeepSeek</span>, and <span style="color:#ff5b6e">Designer</span> to get a blend of reasoning, research, code, logic, risk, and UX perspectives.
+    </p>
+    <div class="features">
+      <div class="feature">
+        <span class="feature-icon">🤝</span>
+        <div class="feature-content">
+          <h3>Collaborative Intelligence</h3>
+          <p>Multiple AIs work together, not in isolation, to provide richer, more robust answers. See their debate and how consensus is reached.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <span class="feature-icon">⚡</span>
+        <div class="feature-content">
+          <h3>Live Visualization</h3>
+          <p>Watch agent interactions in real time with a dynamic graph. Drag, orbit, and explore the collaboration process visually.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <span class="feature-icon">🎯</span>
+        <div class="feature-content">
+          <h3>Optimal Synthesis</h3>
+          <p>Benefit from the strengths of each agent as their outputs are merged into a single, actionable solution tailored to your needs.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <span class="feature-icon">🔒</span>
+        <div class="feature-content">
+          <h3>Privacy First</h3>
+          <p>Your queries are processed securely. Simulation mode lets you try the platform without sending data to any backend.</p>
+        </div>
+      </div>
+    </div>
+    <a class="back-link" href="main.html">← Back to Hub</a>
+  </div>
+  <div class="about-footer">© 2025 AIC•Hub — Multi‑model, agentic collaboration UI</div>
+</body>
+</html>
